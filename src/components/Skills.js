@@ -1,10 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCode, FiServer, FiDatabase, FiTool, FiAward } from 'react-icons/fi';
+import { FiCode, FiServer, FiDatabase, FiTool, FiAward, FiTrendingUp } from 'react-icons/fi';
 import './Skills.css';
 
 const Skills = () => {
   const skillCategories = [
+    {
+      icon: <FiTrendingUp />,
+      title: 'Product Management',
+      skills: [
+        'Product Strategy & Roadmapping',
+        'User Experience Design',
+        'A/B Testing & Experimentation',
+        'Data-Driven Decision Making',
+        'Stakeholder Management',
+        'Go-to-Market Strategy',
+        'Feature Prioritization',
+        'Customer Research & Insights',
+      ],
+    },
     {
       icon: <FiCode />,
       title: 'Programming & Development',

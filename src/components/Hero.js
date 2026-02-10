@@ -24,10 +24,11 @@ const Hero = () => {
               Product & Engineering Leader @ NIKE
             </p>
             <p className="hero-description">
-              Technology leader with <strong>12+ years</strong> leading global engineering, digital commerce, 
-              SRE, and retail technology operations across North America, Europe, and China. I specialize 
-              in modernizing enterprise platforms, driving AI-enabled transformation, and building 
-              high-performing distributed teams that deliver resilient, consumer-first experiences at scale.
+              Hybrid product and engineering leader with <strong>12+ years</strong> bridging technology and business strategy. 
+              I lead global engineering, digital commerce, and SRE operations while driving product roadmaps, 
+              defining user experiences, and delivering data-driven product decisions that unlock revenue growth. 
+              Proven ability to speak both languages—translating technical complexity into business value and 
+              customer impact.
             </p>
           </motion.div>
 
