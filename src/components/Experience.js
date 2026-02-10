@@ -49,7 +49,7 @@ const Experience = () => {
       company: 'Digitas',
       period: 'Nov 2017 – Nov 2019',
       achievements: [
-        'Led end-to-end product redesign for Fortune 100 client, conducting user research, defining product requirements, prioritizing features, and driving execution across design and engineering teams—resulting in 26% increase in YoY engagement.',
+        'Led end-to-end product redesign for Fortune 100 client, conducting user research, defining product requirements, prioritizing features, and driving execution across design and engineering teams, resulting in 26% increase in YoY engagement.',
         'Owned A/B testing strategy and experimentation roadmap using Adobe Target, designing tests, analyzing conversion metrics, and iterating based on user behavior data to boost sign-up conversions by 2%.',
         'Collaborated with UX designers and data scientists to define product vision, create customer journey maps, validate hypotheses through analytics, and present product performance insights to C-level stakeholders.',
         'Managed product backlog, sprint planning, and stakeholder communications, balancing business objectives with user needs and technical constraints.',

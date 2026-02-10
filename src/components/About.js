@@ -19,7 +19,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a hybrid product and engineering leader—equally comfortable defining product roadmaps and user 
+              I'm a hybrid product and engineering leader, equally comfortable defining product roadmaps and user 
               experiences as I am architecting technical solutions and leading engineering teams. Currently leading 
               tech services for Converse.com and global retail operations at NIKE/Converse, I've delivered 33% 
               digital revenue growth through strategic product decisions and technical execution, launched digital 
@@ -35,7 +35,7 @@ const About = () => {
               compelling product narratives.
             </p>
             <p>
-              Throughout my career, I've focused on being deeply connected across the organization—engineering, product, 
+              Throughout my career, I've focused on being deeply connected across the organization: engineering, product, 
               operations, and business teams. I'm known for absorbing complexity, making data-driven decisions, and 
               driving execution across functional boundaries. When teams need someone who understands both the "what" 
               and the "how," I'm the go-to person because I speak both languages fluently.
