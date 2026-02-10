@@ -5,8 +5,7 @@ import './Hero.css';
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    // You can replace this with an actual PDF file path
-    alert('Resume download will be implemented once you provide the PDF file.');
+    window.open('/resume.pdf', '_blank');
   };
 
   return (
