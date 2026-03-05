@@ -24,11 +24,11 @@ const Hero = () => {
               Product & Engineering Leader @ NIKE
             </p>
             <p className="hero-description">
-              Hybrid product and engineering leader with <strong>13 years</strong> bridging technology and business strategy. 
+              Hybrid product and engineering leader with <strong>12+ years</strong> bridging technology and business strategy. 
               I lead global engineering, digital commerce, and SRE operations while driving product roadmaps, 
               defining user experiences, and delivering data-driven product decisions that unlock revenue growth. 
-              Proven ability to speak both languages: translating technical complexity into business value and 
-              customer impact.
+              Proven record delivering 30–40% revenue lifts, modernizing global systems, and ensuring resilient 
+              omnichannel experiences across North America, Europe, and China.
             </p>
           </motion.div>
 
@@ -39,7 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="stat">
-              <span className="stat-number">13</span>
+              <span className="stat-number">12+</span>
               <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat">
@@ -47,7 +47,7 @@ const Hero = () => {
               <span className="stat-label">Brand Scale</span>
             </div>
             <div className="stat">
-              <span className="stat-number">13</span>
+              <span className="stat-number">16</span>
               <span className="stat-label">Countries</span>
             </div>
           </motion.div>

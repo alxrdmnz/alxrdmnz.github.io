@@ -1,0 +1,123 @@
+.clients {
+  background-color: var(--bg-secondary);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.client-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem 2rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  cursor: default;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.client-card:hover {
+  box-shadow: 0 10px 30px var(--shadow);
+  border-color: var(--accent);
+}
+
+.client-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.client-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.45);
+  transition: filter 0.35s ease;
+}
+
+/* Simple Icons SVGs are black — invert them for dark mode */
+[data-theme='dark'] .client-logo-img:not(.client-logo-img--local) {
+  filter: invert(1) grayscale(100%) opacity(0.45);
+}
+
+.client-card:hover .client-logo-img {
+  filter: grayscale(0%) opacity(1);
+}
+
+[data-theme='dark'] .client-card:hover .client-logo-img:not(.client-logo-img--local) {
+  filter: invert(0) grayscale(0%) opacity(1);
+}
+
+/* Local PNGs have white backgrounds — keep them visible in dark mode */
+[data-theme='dark'] .client-logo-img--local {
+  filter: grayscale(100%) opacity(0.5) brightness(0.85);
+}
+
+[data-theme='dark'] .client-card:hover .client-logo-img--local {
+  filter: grayscale(0%) opacity(1) brightness(1);
+}
+
+.client-logo-fallback {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  opacity: 0.45;
+  transition: opacity 0.35s ease;
+  line-height: 1;
+  text-align: center;
+}
+
+.client-card:hover .client-logo-fallback {
+  opacity: 1;
+}
+
+.client-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+}
+
+.client-card:hover .client-name {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 100%;
+  }
+
+  .client-card {
+    padding: 1.75rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .client-logo-wrap {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .client-card {
+    padding: 1.5rem 1rem;
+  }
+}

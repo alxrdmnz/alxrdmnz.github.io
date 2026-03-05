@@ -149,40 +149,52 @@
   }
 
   .timeline-item {
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .timeline-marker {
-    left: -2rem;
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
+    left: -1.9rem;
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
   }
 
   .timeline-header {
-    padding: 1.5rem;
+    padding: 1.1rem 1rem;
   }
 
   .timeline-header h3 {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 
-  .company, .period {
+  .company {
+    font-size: 0.95rem;
     display: block;
-    margin-top: 0.25rem;
+    margin-top: 0.3rem;
+    margin-right: 0;
+  }
+
+  .period {
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 0.15rem;
   }
 
   .achievements {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 1rem 1.1rem 1rem;
   }
 
   .achievements li {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
   }
 
   .chevron {
-    width: 28px;
-    height: 28px;
-    font-size: 1.25rem;
+    width: 26px;
+    height: 26px;
+    font-size: 1.1rem;
   }
 }
