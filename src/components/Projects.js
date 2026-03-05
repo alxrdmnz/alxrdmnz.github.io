@@ -11,14 +11,14 @@ const projects = [
     title: 'Sneaker Launch Experience',
     company: 'Converse',
     description:
-      'Built the end-to-end sneaker launch platform from 0 to 1 — a branded waiting room and queue experience that puts fans in line for high-demand drops before they go live. Scaled to a record-breaking $10M drop with 40x traffic surge, with zero downtime. Sneaker Launch now drives 7–10% of total digital revenue.',
+      'Built the end-to-end sneaker launch platform from 0 to 1: a branded waiting room and queue experience that puts fans in line for high-demand drops before they go live. Scaled to a record-breaking $10M drop with 40x traffic surge, with zero downtime. Sneaker Launch now drives 7-10% of total digital revenue.',
     stats: [
       { value: '$10M', label: 'Record Drop' },
       { value: '40x', label: 'Traffic Surge' },
       { value: '7–10%', label: 'of Digital Revenue' },
     ],
     image: '/sneaker-launch.png',
-    imageAlt: 'Converse Sneaker Launch — branded waiting room experience',
+    imageAlt: 'Converse Sneaker Launch, branded waiting room experience',
     tech: ['Salesforce Commerce Cloud', 'Queue-it', 'Akamai CDN', 'Apache Kafka', 'React'],
   },
   {
@@ -28,14 +28,14 @@ const projects = [
     title: 'Converse.com Global Replatform',
     company: 'Converse',
     description:
-      'Replatform of Converse.com from the Nike.com infrastructure, establishing an independent, scalable global e-commerce foundation. Drove 33% digital revenue growth and expanded reach across 16 European countries, 6 currencies, and 11 languages — enabling localized market access and long-term scalable expansion for a global consumer base.',
+      'Replatform of Converse.com from the Nike.com infrastructure, establishing an independent, scalable global e-commerce foundation. Drove 33% digital revenue growth and expanded reach across 16 European countries, 6 currencies, and 11 languages, enabling localized market access and long-term scalable expansion for a global consumer base.',
     stats: [
       { value: '33%', label: 'Digital Revenue Growth' },
       { value: '16', label: 'European Countries' },
       { value: '11', label: 'Languages' },
     ],
     image: '/converse-web.png',
-    imageAlt: 'Converse.com — global e-commerce replatform',
+    imageAlt: 'Converse.com global e-commerce replatform',
     tech: ['Salesforce Commerce Cloud', 'Akamai CDN', 'Multi-currency', 'Localization', 'CI/CD'],
   },
   {
@@ -45,13 +45,13 @@ const projects = [
     title: 'Merrill.com Digital Experience',
     company: 'Bank of America / Merrill Lynch',
     description:
-      'Led the product redesign of Merrill.com for Fortune 100 client Bank of America — delivering a suite of personal finance, investment, and college savings calculators to help customers chart their financial path. Drove a 26% YoY engagement lift and a 2% boost in sign-up conversions through rigorous A/B testing and data-driven UX iteration.',
+      'Led the product redesign of Merrill.com for Fortune 100 client Bank of America, delivering a suite of personal finance, investment, and college savings calculators to help customers chart their financial path. Drove a 26% YoY engagement lift and a 2% boost in sign-up conversions through rigorous A/B testing and data-driven UX iteration.',
     stats: [
       { value: '26%', label: 'YoY Engagement' },
       { value: '2%', label: 'Conversion Lift' },
     ],
     image: '/merrill-web.png',
-    imageAlt: 'Merrill.com — digital experience redesign for Bank of America',
+    imageAlt: 'Merrill.com digital experience redesign for Bank of America',
     tech: ['Adobe Target', 'A/B Testing', 'React', 'Data Science', 'UX Design'],
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     liveUrl: 'https://tempoflowmusic.vercel.app/',
     repoUrl: 'https://github.com/alxrdmnz/my-music-app',
     image: '/tempoflow.png',
-    imageAlt: 'TempoFlow — Spotify playlist builder from your favorite artists',
+    imageAlt: 'TempoFlow, Spotify playlist builder from your favorite artists',
     tech: ['Next.js', 'Spotify API', 'OAuth PKCE'],
   },
 ];
@@ -80,7 +80,7 @@ const Projects = () => {
       >
         <h2>Projects</h2>
         <p className="section-subtitle">
-          Work I'm proud of — from enterprise builds to personal experiments
+          Work I'm proud of, from enterprise builds to personal experiments
         </p>
 
         <div className="projects-list">

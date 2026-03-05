@@ -20,13 +20,13 @@ const About = () => {
           <div className="about-text">
             <p>
               Hybrid product and engineering leader with 12+ years at NIKE/Converse. I'm equally comfortable 
-              defining product roadmaps as I am architecting technical systems — delivering <strong>33% digital 
+              defining product roadmaps as I am architecting technical systems, delivering <strong>33% digital 
               revenue growth</strong>, scaling commerce across 16 countries, and engineering platforms that handle{' '}
               <strong>$10M+ drops at 40x traffic</strong>.
             </p>
             <p>
               I'm known for absorbing complexity and driving execution across engineering, product, operations, and 
-              business teams — translating technical depth into business impact, and customer insight into shipped product.
+              business teams, translating technical depth into business impact and customer insight into shipped product.
             </p>
           </div>
 
