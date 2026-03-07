@@ -45,31 +45,32 @@ const Contact = () => {
         </p>
 
         <div className="contact-cards">
-          {contactInfo.map((item, index) => (
-            <motion.div
-              key={index}
-              className="contact-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-            >
-              <div className="contact-icon">{item.icon}</div>
-              <span className="contact-label">{item.label}</span>
-              {item.link ? (
-                <a
-                  href={item.link}
-                  target={item.link.startsWith('http') ? '_blank' : '_self'}
-                  rel={item.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                  className="contact-value"
-                >
-                  {item.value}
-                </a>
-              ) : (
+          {contactInfo.map((item, index) => {
+            const CardWrapper = item.link ? motion.a : motion.div;
+            const wrapperProps = item.link
+              ? {
+                  href: item.link,
+                  target: item.link.startsWith('http') ? '_blank' : '_self',
+                  rel: item.link.startsWith('http') ? 'noopener noreferrer' : '',
+                }
+              : {};
+
+            return (
+              <CardWrapper
+                key={index}
+                className={`contact-card${item.link ? ' contact-card--link' : ''}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                {...wrapperProps}
+              >
+                <div className="contact-icon">{item.icon}</div>
+                <span className="contact-label">{item.label}</span>
                 <span className="contact-value">{item.value}</span>
-              )}
-            </motion.div>
-          ))}
+              </CardWrapper>
+            );
+          })}
         </div>
 
         <motion.div

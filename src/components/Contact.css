@@ -20,12 +20,26 @@
   border-radius: 16px;
   text-align: center;
   transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
-.contact-card:hover {
+.contact-card--link {
+  cursor: pointer;
+}
+
+.contact-card--link:hover {
   box-shadow: 0 8px 24px var(--shadow);
   border-color: var(--accent);
   transform: translateY(-4px);
+}
+
+.contact-card--link:hover .contact-value {
+  color: var(--accent);
+}
+
+.contact-card--link:hover .contact-icon {
+  background-color: var(--accent-hover);
 }
 
 .contact-icon {
@@ -60,6 +74,12 @@
 
 a.contact-value:hover {
   color: var(--accent);
+}
+
+/* old hover (non-link card) kept for location card */
+.contact-card:not(.contact-card--link):hover {
+  box-shadow: 0 8px 24px var(--shadow);
+  transform: translateY(-4px);
 }
 
 .contact-cta {
