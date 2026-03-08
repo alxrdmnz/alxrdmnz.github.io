@@ -16,7 +16,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Head of Global Retail, Digital, Engineering and Technical Product – Converse',
+      title: 'Head of Global Retail, Digital, Engineering & Technical Product – Converse',
       company: 'NIKE',
       period: 'Nov 2019 – Present',
       achievements: [

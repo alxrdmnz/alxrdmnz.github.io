@@ -14,7 +14,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="hero-title">
-              I build the systems behind <span className="highlight">$2B brands.</span>
+              I build the systems behind <span className="highlight">global brands.</span>
             </h1>
             <p className="hero-subtitle">
               Alex Munoz &mdash; Product & Engineering Leader @ NIKE
