@@ -42,6 +42,8 @@ const Skills = () => {
       icon: <FiGlobe />,
       title: 'Web Platforms & CMS',
       skills: [
+        'Adobe Experience Manager',
+        'Contentful',
         'WordPress',
         'WooCommerce',
         'Shopify',
