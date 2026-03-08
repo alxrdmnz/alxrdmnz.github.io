@@ -17,12 +17,13 @@ const Hero = () => {
               I build the systems behind <span className="highlight">global brands.</span>
             </h1>
             <p className="hero-subtitle">
-              Alex Munoz &mdash; Product & Engineering Leader @ NIKE
+              Product & Engineering Leader at NIKE
             </p>
             <p className="hero-description">
               Hybrid product and engineering leader with <strong>12+ years</strong> delivering 30–40% revenue lifts 
-              across global digital commerce, SRE, and retail technology. I bridge the gap between business strategy 
-              and technical execution — speaking both languages fluently across North America, Europe, and China.
+              across global digital commerce, SRE, and retail technology. I build end-to-end digital experiences, 
+              lead high-performing teams, and turn complex technical challenges into products people actually use.
+              Open to select client projects and new opportunities.
             </p>
           </motion.div>
 

@@ -16,7 +16,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Head of Global Retail, Digital, Engineering & Technical Product – Converse',
+      title: 'Head of Global Retail, Digital, Engineering & Technical Product',
       company: 'NIKE',
       period: 'Nov 2019 – Present',
       achievements: [
@@ -36,7 +36,7 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Director, Data Integration (Interim) – Converse',
+      title: 'Director, Data Integration (Interim)',
       company: 'NIKE',
       period: 'Feb 2025 – Oct 2025',
       achievements: [

@@ -39,9 +39,9 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2>Get In Touch</h2>
+        <h2>Let's Work Together</h2>
         <p className="section-subtitle">
-          Open to new opportunities, collaborations, and conversations
+          Open to client projects, new career opportunities, and conversations worth having
         </p>
 
         <div className="contact-cards">

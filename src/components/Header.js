@@ -23,7 +23,7 @@ const Header = ({ theme, toggleTheme }) => {
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
     { label: 'Awards', href: '#awards' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Work Together', href: '#contact' },
   ];
 
   const handleNavClick = (e, href) => {

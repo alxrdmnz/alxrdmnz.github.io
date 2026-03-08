@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiAward, FiTrendingUp, FiStar, FiZap, FiCheckCircle } from 'react-icons/fi';
+import { FiAward, FiTrendingUp, FiStar } from 'react-icons/fi';
 import './Awards.css';
 
 const Awards = () => {
@@ -16,19 +16,9 @@ const Awards = () => {
       description: 'Competitively selected for Harvard Business School\'s leadership cohort, recognized for innovation and leadership potential.',
     },
     {
-      icon: <FiZap />,
-      title: '2x Exceptional Rating',
-      description: 'Earned the highest possible annual performance rating twice — awarded to fewer than 5% of the organization.',
-    },
-    {
-      icon: <FiCheckCircle />,
-      title: '3x Highly Successful Rating',
-      description: 'Consistently rated Highly Successful across three consecutive review cycles, reflecting sustained high performance.',
-    },
-    {
       icon: <FiTrendingUp />,
-      title: '5 Years of Top-Tier Performance',
-      description: 'Five consecutive years of top performance ratings across the Nike organization — a record of consistent excellence.',
+      title: 'Consistent Excellence, 13-Year Career',
+      description: 'A career-long record of top performance. Most recently at Nike with 6 consecutive years of high-performance ratings, including 2 Exceptional and 3 Highly Successful reviews. Consistent across every role, every company, every year.',
     },
   ];
 
