@@ -4,9 +4,8 @@
 
 .awards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
 }
 
 .award-card {
@@ -78,52 +77,6 @@
   font-weight: 600;
 }
 
-.performance-section {
-  background-color: var(--card-bg);
-  padding: 3rem;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-}
-
-.performance-section h3 {
-  font-size: 1.75rem;
-  color: var(--text-primary);
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: 600;
-}
-
-.performance-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.performance-card {
-  background-color: var(--bg-secondary);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  border: 2px solid var(--border);
-  transition: all 0.3s ease;
-}
-
-.performance-card:hover {
-  border-color: var(--accent);
-  transform: scale(1.05);
-}
-
-.performance-rating {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.performance-card p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
 
 @media (max-width: 768px) {
   .awards-grid {
@@ -141,16 +94,4 @@
     font-size: 1.5rem;
   }
 
-  .performance-section {
-    padding: 2rem;
-  }
-
-  .performance-section h3 {
-    font-size: 1.5rem;
-  }
-
-  .performance-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }

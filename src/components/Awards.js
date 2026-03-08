@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiAward, FiTrendingUp, FiStar } from 'react-icons/fi';
+import { FiAward, FiTrendingUp, FiStar, FiZap, FiCheckCircle } from 'react-icons/fi';
 import './Awards.css';
 
 const Awards = () => {
@@ -8,31 +8,27 @@ const Awards = () => {
     {
       icon: <FiAward />,
       title: 'Nike Milestone Award',
-      description: 'Awarded by Nike Execs for exceptional contributions and achievements in digital transformation and technology leadership',
-      year: '',
+      description: 'Awarded by Nike executives for digital transformation leadership and measurable technology impact across global operations.',
     },
     {
       icon: <FiStar />,
-      title: 'Boston\'s Future Leaders Program',
-      description: 'Harvard Business School - Selected for demonstrated leadership potential and innovation',
-      year: '',
+      title: "Boston's Future Leaders Program",
+      description: 'Competitively selected for Harvard Business School\'s leadership cohort, recognized for innovation and leadership potential.',
+    },
+    {
+      icon: <FiZap />,
+      title: '2x Exceptional Rating',
+      description: 'Earned the highest possible annual performance rating twice — awarded to fewer than 5% of the organization.',
+    },
+    {
+      icon: <FiCheckCircle />,
+      title: '3x Highly Successful Rating',
+      description: 'Consistently rated Highly Successful across three consecutive review cycles, reflecting sustained high performance.',
     },
     {
       icon: <FiTrendingUp />,
-      title: 'Significant Performance',
-      description: 'Prior 5 Years – Yearly Review - Recognized for outstanding leadership and delivery of measurable business impact',
-      year: '',
-    },
-  ];
-
-  const performanceRatings = [
-    {
-      rating: '2x Exceptional',
-      description: 'Exceeded all expectations with outstanding contributions',
-    },
-    {
-      rating: '3x Highly Successful',
-      description: 'Consistently delivered superior results and performance',
+      title: '5 Years of Top-Tier Performance',
+      description: 'Five consecutive years of top performance ratings across the Nike organization — a record of consistent excellence.',
     },
   ];
 
@@ -46,7 +42,7 @@ const Awards = () => {
       >
         <h2>Awards & Recognition</h2>
         <p className="section-subtitle">
-          Recognized for excellence in leadership and innovation
+          A track record of performance recognized at the highest levels
         </p>
 
         <div className="awards-grid">
@@ -54,36 +50,17 @@ const Awards = () => {
             <motion.div
               key={index}
               className="award-card"
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
               <div className="award-icon">{award.icon}</div>
               <h3>{award.title}</h3>
               <p>{award.description}</p>
-              {award.year && <span className="award-year">{award.year}</span>}
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="performance-section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          <h3>Performance Excellence</h3>
-          <div className="performance-grid">
-            {performanceRatings.map((item, index) => (
-              <div key={index} className="performance-card">
-                <div className="performance-rating">{item.rating}</div>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </motion.div>
     </section>
   );

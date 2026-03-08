@@ -14,17 +14,15 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Alex Munoz</span>
+              I build the systems behind <span className="highlight">$2B brands.</span>
             </h1>
             <p className="hero-subtitle">
-              Product & Engineering Leader @ NIKE
+              Alex Munoz &mdash; Product & Engineering Leader @ NIKE
             </p>
             <p className="hero-description">
-              Hybrid product and engineering leader with <strong>12+ years</strong> bridging technology and business strategy. 
-              I lead global engineering, digital commerce, and SRE operations while driving product roadmaps, 
-              defining user experiences, and delivering data-driven product decisions that unlock revenue growth. 
-              Proven record delivering 30–40% revenue lifts, modernizing global systems, and ensuring resilient 
-              omnichannel experiences across North America, Europe, and China.
+              Hybrid product and engineering leader with <strong>12+ years</strong> delivering 30–40% revenue lifts 
+              across global digital commerce, SRE, and retail technology. I bridge the gap between business strategy 
+              and technical execution — speaking both languages fluently across North America, Europe, and China.
             </p>
           </motion.div>
 
@@ -56,6 +54,14 @@ const Hero = () => {
           >
             <a href="#contact" className="btn btn-primary">
               Get In Touch
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alexardmunoz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              <FiLinkedin /> LinkedIn
             </a>
           </motion.div>
 

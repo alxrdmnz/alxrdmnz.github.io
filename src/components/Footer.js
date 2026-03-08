@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Alex Munoz</h3>
-          <p>Product & Engineering Leader passionate about building scalable digital solutions.</p>
+          <p>12+ years building digital commerce, engineering systems, and product experiences for global brands.</p>
         </div>
 
         <div className="footer-section">
@@ -19,6 +19,8 @@ const Footer = () => {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
+            <a href="#clients">Clients</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#awards">Awards</a>
             <a href="#contact">Contact</a>

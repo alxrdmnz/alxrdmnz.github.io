@@ -40,9 +40,9 @@ const About = () => {
 
             <div className="highlight-card">
               <h3>Current Role</h3>
-              <p><strong>Head of Global Retail and Digital Engineering</strong></p>
-              <p>Technology Services – Converse</p>
-              <p>NIKE, Inc. (Nov 2019 – Present)</p>
+              <p><strong>Head of Global Retail, Digital & Engineering</strong></p>
+              <p>Converse at NIKE, Inc.</p>
+              <p>Nov 2019 – Present</p>
             </div>
 
             <div className="highlight-card">
