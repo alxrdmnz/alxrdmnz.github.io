@@ -38,8 +38,8 @@ const Hero = () => {
               <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat">
-              <span className="stat-number">$10M+</span>
-              <span className="stat-label">Revenue Generated</span>
+              <span className="stat-number">33%</span>
+              <span className="stat-label">Revenue Growth</span>
             </div>
             <div className="stat">
               <span className="stat-number">16</span>
