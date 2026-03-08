@@ -26,13 +26,13 @@ const About = () => {
             </p>
             <p>
               I'm known for absorbing complexity and driving execution across engineering, product, operations, and 
-              business teams, translating technical depth into business impact and customer insight into shipped product.
+              business teams, translating technical depth into business impact and customer insight into shipped work.
             </p>
             <p>
               Beyond my leadership role, I take on select client engagements for companies and founders looking to 
-              build or modernize their digital presence. Whether it's a new website, an e-commerce experience, 
+              build or modernize their digital presence. Whether it's a new website, an e-commerce platform, 
               an end-to-end customer journey, or a product built from scratch, I bring the same standards I apply 
-              at scale to every project I take on. If you have something you're building, let's talk.
+              at global scale to every project. If you have something you're building, reach out.
             </p>
           </div>
 

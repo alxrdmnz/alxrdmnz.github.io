@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiCode, FiServer, FiDatabase, FiTool, FiAward, FiTrendingUp } from 'react-icons/fi';
+import { FiCode, FiServer, FiDatabase, FiTool, FiAward, FiTrendingUp, FiGlobe } from 'react-icons/fi';
 import './Skills.css';
 
 const Skills = () => {
@@ -34,9 +34,21 @@ const Skills = () => {
         'Spring Boot Framework',
         'Headless Commerce Architecture',
         'Progressive Web Apps (PWA)',
-        'Shopify',
         'Claude',
         'Cursor',
+      ],
+    },
+    {
+      icon: <FiGlobe />,
+      title: 'Web Platforms & CMS',
+      skills: [
+        'WordPress',
+        'WooCommerce',
+        'Shopify',
+        'Wix',
+        'Squarespace',
+        'PHP',
+        'Webflow',
       ],
     },
     {

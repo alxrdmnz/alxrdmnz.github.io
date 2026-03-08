@@ -44,6 +44,17 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Prevent typographic widows (single words on last line) */
+p, li, h1, h2, h3 {
+  text-wrap: pretty;
+}
+
+/* Mobile: remove tap highlight and prevent 300ms touch delay */
+a, button, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

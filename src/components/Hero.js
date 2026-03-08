@@ -22,7 +22,7 @@ const Hero = () => {
             <p className="hero-description">
               Hybrid product and engineering leader with <strong>12+ years</strong> delivering 30–40% revenue lifts 
               across global digital commerce, SRE, and retail technology. I build end-to-end digital experiences, 
-              lead high-performing teams, and turn complex technical challenges into products people actually use.
+              lead high-performing teams, and turn complex technical challenges into products that drive real results.
               Open to select client projects and new opportunities.
             </p>
           </motion.div>
@@ -38,12 +38,12 @@ const Hero = () => {
               <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat">
-              <span className="stat-number">$2B</span>
-              <span className="stat-label">Brand Scale</span>
+              <span className="stat-number">$10M+</span>
+              <span className="stat-label">Revenue Generated</span>
             </div>
             <div className="stat">
               <span className="stat-number">16</span>
-              <span className="stat-label">Countries</span>
+              <span className="stat-label">Countries Launched</span>
             </div>
           </motion.div>
 
