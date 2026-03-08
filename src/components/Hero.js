@@ -1,13 +1,9 @@
 import React from 'react';
-import { FiGithub, FiLinkedin, FiMapPin, FiMail, FiDownload } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMapPin, FiMail } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
-  const handleDownloadResume = () => {
-    window.open('/resume.pdf', '_blank');
-  };
-
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -61,9 +57,6 @@ const Hero = () => {
             <a href="#contact" className="btn btn-primary">
               Get In Touch
             </a>
-            <button onClick={handleDownloadResume} className="btn btn-secondary">
-              <FiDownload /> Download Resume
-            </button>
           </motion.div>
 
           <motion.div
