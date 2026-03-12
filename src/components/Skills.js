@@ -130,6 +130,14 @@ const Skills = () => {
         'Certified Power User - Splunk',
       ],
     },
+    {
+      category: 'AI & Developer',
+      certs: [
+        'AI Fluency Framework & Foundations - Anthropic',
+        'Introduction to Model Context Protocol - Anthropic',
+        'Model Context Protocol: Advanced Topics - Anthropic',
+      ],
+    },
   ];
 
   return (
