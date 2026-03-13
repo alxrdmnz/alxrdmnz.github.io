@@ -151,6 +151,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience {
+    padding-left: 24px;
+  }
+
   .timeline::before {
     left: 15px;
   }
@@ -165,6 +169,7 @@
     height: 36px;
     font-size: 0.9rem;
     margin-top: 0.1rem;
+    flex-shrink: 0;
   }
 
   .timeline-header {
