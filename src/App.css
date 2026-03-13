@@ -20,6 +20,12 @@
   outline-offset: 2px;
 }
 
+@media (max-width: 768px) {
+  .skip-link:focus {
+    top: 4rem;
+  }
+}
+
 .App {
   min-height: 100vh;
   display: flex;

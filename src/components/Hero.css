@@ -235,7 +235,9 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 90px 20px 50px;
+    padding: calc(90px + env(safe-area-inset-top, 0px)) 20px 50px;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .hero-title {
@@ -288,7 +290,18 @@
     margin-left: 0;
   }
 
+  .hero-content {
+    gap: 2rem;
+  }
+
   .hero-image {
-    display: none;
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image .image-wrapper {
+    max-width: 220px;
+    margin: 0 auto;
+    border-width: 3px;
   }
 }

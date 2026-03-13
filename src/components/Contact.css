@@ -132,15 +132,23 @@ a.contact-value:hover {
 
 @media (max-width: 480px) {
   .contact-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .contact-card {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.25rem;
+    min-height: 44px;
+  }
+
+  .contact-cta .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
   }
 
   .contact-value {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }

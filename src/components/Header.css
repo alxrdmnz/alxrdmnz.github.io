@@ -97,6 +97,8 @@
 
 .mobile-menu-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   color: var(--text-primary);
@@ -105,11 +107,15 @@
   padding: 0.5rem;
   min-width: 44px;
   min-height: 44px;
-  align-items: center;
-  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
   .header-container {
     padding: 1rem;
   }
@@ -138,7 +144,19 @@
   }
 
   .mobile-menu-toggle {
-    display: block;
+    display: flex;
+  }
+
+  .mobile-menu-toggle:hover,
+  .mobile-menu-toggle:focus-visible {
+    background-color: var(--bg-secondary);
+  }
+
+  .nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
   }
 
   .logo {
