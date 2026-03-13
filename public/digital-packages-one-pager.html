@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Digital Experience Packages | Alex Munoz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg-primary);
@@ -35,6 +39,17 @@
       padding: 1.75rem 1.25rem;
       max-width: 1200px;
       margin: 0 auto;
+    }
+
+    a, .cta-button {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    a:focus-visible,
+    .cta-button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
     }
 
     header {
@@ -74,11 +89,14 @@
     .contact {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
       color: var(--accent);
       font-weight: 500;
       text-decoration: none;
       font-size: 0.9rem;
+      min-height: 44px;
+      padding: 0.5rem 0;
     }
     .contact:hover {
       color: var(--accent-hover);
@@ -263,15 +281,146 @@
       color: var(--bg-primary);
       font-weight: 600;
       font-size: 0.95rem;
-      padding: 0.65rem 1.5rem;
-      border-radius: 8px;
+      padding: 0.875rem 1.75rem;
+      border-radius: 10px;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.2s, transform 0.2s;
     }
 
     .cta-button:hover {
       background: var(--accent-hover);
       color: var(--bg-primary);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1.5rem 1rem;
+        padding-left: max(1rem, env(safe-area-inset-left));
+        padding-right: max(1rem, env(safe-area-inset-right));
+        padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+      }
+
+      header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+      }
+
+      header .logo-wrap {
+        margin-bottom: 0.75rem;
+      }
+
+      header img {
+        height: 100px;
+      }
+
+      .intro {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+        padding: 0 0.25rem;
+      }
+
+      .packages {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .package {
+        padding: 1.25rem 1rem;
+      }
+
+      .package-name {
+        font-size: 1.05rem;
+      }
+
+      .package-desc {
+        font-size: 0.8rem;
+      }
+
+      .price {
+        font-size: 1.1rem;
+      }
+
+      .add-ons-section {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .add-ons-section h2 {
+        font-size: 1rem;
+      }
+
+      .add-ons-section p {
+        font-size: 0.85rem;
+      }
+
+      .add-ons-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+
+      .add-on-item {
+        padding: 0.75rem 1rem;
+        min-height: 44px;
+        align-items: center;
+      }
+
+      .add-on-name {
+        font-size: 0.85rem;
+      }
+
+      .cta-section {
+        margin-bottom: 1rem;
+      }
+
+      .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        min-height: 48px;
+        line-height: 1.25;
+        padding: 0.875rem 1.5rem;
+        border-radius: 10px;
+      }
+
+      .disclaimer {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        padding-top: 1rem;
+        padding-bottom: env(safe-area-inset-bottom, 0);
+      }
+
+      footer img {
+        height: 52px;
+      }
+
+      footer > a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-note {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+      }
+
+      .footer-note a {
+        padding: 0.35rem 0.15rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.25rem 0.75rem;
+      }
+
+      .package ul {
+        font-size: 0.82rem;
+      }
     }
 
     @media print {
