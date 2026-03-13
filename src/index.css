@@ -32,6 +32,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Section anchors: prevent fixed header from covering section titles */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -44,9 +49,38 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Prevent typographic widows (single words on last line) */
-p, li, h1, h2, h3 {
+/* Prevent orphans and widows (1–2 words alone on a line) */
+p, li, h1, h2, h3, .section-subtitle {
   text-wrap: pretty;
+}
+
+/* Balance multi-line headings for even line lengths */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Prefer keeping at least 2 lines together at paragraph end/start */
+p {
+  orphans: 2;
+  widows: 2;
+  line-height: 1.7;
+}
+
+section .section-subtitle {
+  line-height: 1.65;
+}
+
+/* Better word breaks on narrow viewports */
+p, .section-subtitle, .hero-description, .about-text p, .packages-teaser {
+  hyphens: auto;
+}
+
+/* Keyboard focus: visible ring for accessibility, no ring on mouse click */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Mobile: remove tap highlight and prevent 300ms touch delay */

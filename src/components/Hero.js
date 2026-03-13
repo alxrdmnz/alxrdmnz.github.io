@@ -20,10 +20,10 @@ const Hero = () => {
               Product & Engineering Leader at NIKE
             </p>
             <p className="hero-description">
-              Hybrid product and engineering leader with <strong>12+ years</strong> delivering 30–40% revenue lifts 
-              across global digital commerce, SRE, and retail technology. I build end-to-end digital experiences, 
-              lead high-performing teams, and turn complex technical challenges into products that drive real results.
-              Open to select client projects and new opportunities.
+              Hybrid product and engineering leader with <strong>12+ years</strong> delivering 30–40% revenue lifts
+              across global digital commerce, SRE, and retail technology. I build end-to-end digital experiences,
+              lead high-performing teams, and turn complex technical challenges into products that drive results.
+              Open to select client work and new opportunities.
             </p>
           </motion.div>
 
@@ -53,7 +53,14 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <a href="#contact" className="btn btn-primary">
+            <a
+              href="#contact"
+              className="btn btn-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Get In Touch
             </a>
             <a

@@ -108,12 +108,19 @@ const Experience = () => {
                   <FiBriefcase />
                 </div>
                 <div className="timeline-content">
-                  <div 
+                  <div
                     className="timeline-header"
                     onClick={() => toggleItem(index)}
                     role="button"
                     tabIndex={0}
-                    onKeyPress={(e) => e.key === 'Enter' && toggleItem(index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`experience-content-${index}`}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleItem(index);
+                      }
+                    }}
                   >
                     <div className="header-main">
                       <h3>{exp.title}</h3>
@@ -132,6 +139,7 @@ const Experience = () => {
                   <AnimatePresence initial={false}>
                     {isOpen && (
                       <motion.ul
+                        id={`experience-content-${index}`}
                         className="achievements"
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 'auto', opacity: 1 }}

@@ -88,7 +88,7 @@ const Clients = () => {
 
         <div className="clients-grid">
           {clients.map((client, index) => (
-            <ClientLogo key={client.slug} client={client} index={index} />
+            <ClientLogo key={client.slug || client.name.replace(/\s+/g, '-').toLowerCase()} client={client} index={index} />
           ))}
         </div>
       </motion.div>

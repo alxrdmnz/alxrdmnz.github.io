@@ -39,10 +39,12 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2>Let's Work Together</h2>
-        <p className="section-subtitle">
-          Open to client projects, new career opportunities, and conversations worth having
-        </p>
+        <div className="contact-intro">
+          <h2>Let's Work Together</h2>
+          <p className="section-subtitle">
+            Open to client projects, career opportunities, and conversations worth having.
+          </p>
+        </div>
 
         <div className="contact-cards">
           {contactInfo.map((item, index) => {
