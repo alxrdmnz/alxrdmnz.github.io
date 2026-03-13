@@ -20,6 +20,7 @@ const projects = [
     image: '/sneaker-launch.png',
     imageAlt: 'Converse Sneaker Launch, branded waiting room experience',
     tech: ['Salesforce Commerce Cloud', 'Queue-it', 'Akamai CDN', 'Apache Kafka', 'React'],
+    liveUrl: 'https://www.converse.com',
   },
   {
     type: 'work',
@@ -37,6 +38,7 @@ const projects = [
     image: '/converse-web.png',
     imageAlt: 'Converse.com global e-commerce replatform',
     tech: ['Salesforce Commerce Cloud', 'Akamai CDN', 'Multi-currency', 'Localization', 'CI/CD'],
+    liveUrl: 'https://www.converse.com',
   },
   {
     type: 'work',
@@ -53,6 +55,7 @@ const projects = [
     image: '/merrill-web.png',
     imageAlt: 'Merrill.com digital experience redesign for Bank of America',
     tech: ['Adobe Target', 'A/B Testing', 'React', 'Data Science', 'UX Design'],
+    liveUrl: 'https://www.merrill.com',
   },
   {
     type: 'personal',
