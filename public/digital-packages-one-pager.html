@@ -44,6 +44,27 @@
       border-bottom: 1px solid var(--border);
     }
 
+    header .logo-wrap,
+    footer .logo-wrap {
+      background: var(--bg-primary);
+      display: inline-block;
+      margin: 0 auto 1rem;
+      line-height: 0;
+    }
+
+    header img,
+    footer img {
+      display: block;
+      margin: 0 auto;
+      height: 140px;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    footer img {
+      height: 64px;
+    }
+
     .tagline {
       color: var(--text-secondary);
       font-size: 0.95rem;
@@ -342,7 +363,9 @@
 </head>
 <body>
   <header>
-    <img src="/AJM_vertical.svg" alt="AJM - Alex Munoz" style="display:block;margin:0 auto 1rem;height:140px;width:auto;">
+    <div class="logo-wrap">
+      <img src="/AJM_vertical.svg" alt="AJM - Alex Munoz">
+    </div>
     <a class="contact" href="mailto:alexardmunoz@gmail.com">alexardmunoz@gmail.com</a>
   </header>
 
@@ -461,7 +484,9 @@
   <p class="disclaimer">Prices are estimates; final scope and quote will be provided in your proposal.</p>
 
   <footer>
-    <img src="/AJM_horizontal.svg" alt="AJM - Alex Munoz" style="display:block;margin:0 auto 1rem;height:64px;width:auto;">
+    <div class="logo-wrap">
+      <img src="/AJM_horizontal.svg" alt="AJM - Alex Munoz">
+    </div>
     <a href="https://alxrdmnz.github.io/">View full portfolio →</a>
     <p class="footer-note">New York, NY · <a href="mailto:alexardmunoz@gmail.com">alexardmunoz@gmail.com</a> · <a href="https://www.linkedin.com/in/alexardmunoz/">LinkedIn</a></p>
   </footer>
